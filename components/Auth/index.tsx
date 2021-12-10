@@ -119,7 +119,7 @@ const Auth = () => {
           helperText={formik.touched.password && formik.errors.password}
         />
 
-        <Link href='/reg'>
+        <Link href='/reg' passHref>
           <MUILink
             sx={{
               color: (theme) =>
@@ -145,7 +145,7 @@ const Auth = () => {
         >
           Submit
         </LoadingButton>
-        <Link href='/'>
+        <Link href='/' passHref>
           <LoadingButton
             loading={formik.isSubmitting}
             onClick={() => globalStore.setTypeDisplayForm(0)}

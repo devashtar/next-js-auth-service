@@ -38,7 +38,7 @@ const Nav = observer(() => {
       }}
     >
       <Toolbar>
-        <Link href='/'>
+        <Link href='/' passHref>
           <Box sx={{ flexGrow: 1 }}>
             <IconButton
               onClick={() => activateForm(0, '/')}
@@ -61,7 +61,7 @@ const Nav = observer(() => {
             p: matches ? 1 : 0.5
           }}
         >
-          <Link href='/auth'>
+          <Link href='/auth' passHref>
             <Button
               onClick={() => activateForm(2)}
               size='small'
@@ -75,7 +75,7 @@ const Nav = observer(() => {
               sing in
             </Button>
           </Link>
-          <Link href='/reg'>
+          <Link href='/reg' passHref>
             <Button
               onClick={() => activateForm(1)}
               size='small'

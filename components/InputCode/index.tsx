@@ -86,7 +86,13 @@ export default function InputCode() {
           variant='body2'
           underline='always'
         >
-          <a href='/'>Вернуться на главную</a>
+          <Button
+            onClick={() => router.replace('/')}
+            variant='text'
+            size='small'
+          >
+            Вернуться на главную
+          </Button>
         </MUILink>
 
         <Typography variant='h6'>Введите код подтверждения:</Typography>

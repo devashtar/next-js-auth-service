@@ -14,7 +14,7 @@ export const CustomThemeProvider: React.FC = observer(({ children }) => {
   useEffect(() => {
     if (!load) return
     setTheme(createTheme(globalStore.isDark ? darkTheme : lightTheme))
-  }, [globalStore.isDark])
+  }, [load, globalStore.isDark])
 
   useEffect(() => {
     const isDarkRecord = localStorage.getItem('themeMode') as string | null

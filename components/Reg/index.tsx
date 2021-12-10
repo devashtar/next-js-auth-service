@@ -226,7 +226,7 @@ const Reg = () => {
           }
         />
 
-        <Link href='/auth'>
+        <Link href='/auth' passHref>
           <MUILink
             sx={{
               color: (theme) =>
@@ -252,7 +252,7 @@ const Reg = () => {
         >
           Submit
         </LoadingButton>
-        <Link href='/'>
+        <Link href='/' passHref>
           <LoadingButton
             loading={formik.isSubmitting}
             onClick={() => globalStore.setTypeDisplayForm(0)}
