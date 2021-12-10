@@ -1,20 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-
 import Nav from '@components/Nav'
-import Home from '@components/Home'
-import globalStore from '@store/Global.store'
+import Reg from '@components/Reg'
 import { useEffect } from 'react'
+import globalStore from '@store/Global.store'
 
-const HomePage: NextPage = () => {
+const RegPage: NextPage = () => {
   useEffect(() => {
     globalStore.setIsLoading(false)
-    globalStore.setTypeDisplayForm(0)
+    globalStore.setTypeDisplayForm(1)
   }, [])
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Reg</title>
         <meta name='keywords' content='NEXT JS, MUI, SASS, MOBX' />
         <meta name='author' content='Michael' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -22,9 +21,9 @@ const HomePage: NextPage = () => {
       </Head>
 
       <Nav />
-      <Home />
+      <Reg />
     </div>
   )
 }
 
-export default HomePage
+export default RegPage

@@ -3,18 +3,36 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_ENV=production && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/lab": "^5.0.0-alpha.59",
+    "@mui/material": "^5.2.2",
+    "axios": "^0.24.0",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "mobx": "^6.3.8",
+    "mobx-react-lite": "^3.2.2",
     "next": "12.0.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-timer-hook": "^3.0.5",
+    "react-tsparticles": "^1.37.5",
+    "react-verification-code-input": "^1.2.9",
+    "sass": "^1.44.0",
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "16.11.11",
     "@types/react": "17.0.37",
+    "@types/styled-components": "^5.1.16",
     "eslint": "8.4.0",
     "eslint-config-next": "12.0.5",
     "typescript": "4.5.2"

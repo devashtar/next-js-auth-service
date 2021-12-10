@@ -14,3 +14,29 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+/* подключать к странице отдельные шрифты, для оптимизации(чтобы не грузить все шрифты на каждую страницу) */
+/* @font-face {
+  font-family: 'Montserrat';
+      src: local('/fonts/NotoSans-Regular.ttf'),
+        local('/fonts/NotoSans-Bold.ttf'),
+        local('/fonts/NotoSans-italic.ttf'),
+        local('/fonts/NotoSans-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+      src: local('/fonts/Roboto-Black.ttf'),
+        local('/fonts/Roboto-BlackItalic.ttf'),
+        local('/fonts/Roboto-Bold.ttf'),
+        local('/fonts/Roboto-BoldItalic.ttf'),
+        local('/fonts/Roboto-Italic.ttf'),
+        local('/fonts/Roboto-Light.ttf'),
+        local('/fonts/Roboto-LightItalic.ttf'),
+        local('/fonts/Roboto-Medium.ttf'),
+        local('/fonts/Roboto-MediumItalic.ttf'),
+        local('/fonts/Roboto-Regular.ttf'),
+        local('/fonts/Roboto-Thin.ttf'),
+        local('/fonts/Roboto-ThinItalic.ttf');
+} */
